@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import freecodecampLogo from './images/fcc_primary_large.jpg'
+import TaskList from './components/TaskList.jsx';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='freecodecamp-logo-container'>
+        <img
+          src={freecodecampLogo}
+          className='freecodecamp-logo'
+          alt='logofcc'
+        />
+      </div>
+      <div className='main-tasklist'>
+        <h1>
+          Mis Tareas
+        </h1>
+        <TaskList/>
+      </div>
     </div>
   );
 }
